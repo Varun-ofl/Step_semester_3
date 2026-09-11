@@ -16,6 +16,22 @@
 
 ------
 
+## Date: 11-09-2026
+
+**Today's Work:**
+- Added the session 3 class and assignment solutions on `feature/session_3`.
+- Added the session 4 class and assignment solutions on `feature/session_4`.
+- Added the session 5 class and assignment solutions on `feature/session_5`.
+- Compiled and tested each session before pushing its feature branch.
+
+**Next Session Plan:**
+- Continue coding in a new feature branch created from `develop`.
+
+**Issues Faced:**
+- None.
+
+------
+
 ## Date: 28-08-2026
 
 **Today's Work:**
