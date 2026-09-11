@@ -22,6 +22,46 @@ public class AccessChecker {
         }
     }
 
+    public static String summarizeByModifier(String[][] attempts) {
+        String[] modifiers = {"private", "default", "protected", "public"};
+        StringBuilder summary = new StringBuilder();
+
+        for (String modifier : modifiers) {
+            int allowed = 0;
+            int denied = 0;
+            for (String[] attempt : attempts) {
+                if (attempt != null && attempt.length >= 2 && modifier.equals(attempt[0])) {
+                    if ("ALLOWED".equals(classifyAccess(attempt[0], attempt[1]))) {
+                        allowed++;
+                    } else {
+                        denied++;
+                    }
+                }
+            }
+            if (summary.length() > 0) {
+                summary.append(" | ");
+            }
+            summary.append(modifier).append(": ")
+                    .append(allowed).append(" allowed / ")
+                    .append(denied).append(" denied");
+        }
+        return summary.toString();
+    }
+
+    public static String firstDeniedAttempt(String[][] attempts) {
+        for (int index = 0; index < attempts.length; index++) {
+            String[] attempt = attempts[index];
+            if (attempt == null || attempt.length < 2
+                    || "DENIED".equals(classifyAccess(attempt[0], attempt[1]))) {
+                if (attempt == null || attempt.length < 2) {
+                    return "Invalid attempt (#" + (index + 1) + ")";
+                }
+                return attempt[0] + " via " + attempt[1] + " (attempt #" + (index + 1) + ")";
+            }
+        }
+        return "None Denied";
+    }
+
     public static String summarizeBatch(String[][] attempts) {
         int allowed = 0;
         int denied = 0;
