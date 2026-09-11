@@ -1,8 +1,8 @@
-public class BookInventory {
+public class BookCopyCirculation {
     private final int copiesTotal;
     private int copiesAvailable;
 
-    public BookInventory(int copiesTotal) {
+    public BookCopyCirculation(int copiesTotal) {
         if (copiesTotal <= 0 || copiesTotal > 500) {
             throw new IllegalArgumentException("copiesTotal must be between 1 and 500");
         }
@@ -24,5 +24,19 @@ public class BookInventory {
 
     public int getCopiesAvailable() {
         return copiesAvailable;
+    }
+
+    public static void main(String[] args) {
+        BookCopyCirculation inventory = new BookCopyCirculation(3);
+        inventory.checkout();
+        inventory.checkout();
+        inventory.checkout();
+        inventory.checkout();
+        System.out.println(inventory.getCopiesAvailable());
+        inventory.checkIn();
+        inventory.checkIn();
+        inventory.checkIn();
+        inventory.checkIn();
+        System.out.println(inventory.getCopiesAvailable());
     }
 }

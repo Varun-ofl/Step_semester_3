@@ -1,22 +1,12 @@
-public class LibraryMember {
-    private String membershipPin;
-    String branchCode;
-    protected double finesOwed;
-    public String displayName;
-
+public class LibraryMemberBean {
     private String membershipId;
     private String name;
     private boolean premiumMember;
     private String securityAnswer;
 
-    public LibraryMember() {
-        membershipPin = "";
-        branchCode = "";
-        finesOwed = 0;
-        displayName = "";
+    public LibraryMemberBean() {
         membershipId = "";
         name = "";
-        premiumMember = false;
     }
 
     public String getMembershipId() {
@@ -47,5 +37,16 @@ public class LibraryMember {
 
     public void setSecurityAnswer(String answer) {
         securityAnswer = answer == null ? null : Integer.toHexString(answer.hashCode());
+    }
+
+    public static void main(String[] args) {
+        LibraryMemberBean member = new LibraryMemberBean();
+        member.setMembershipId("LIB-8841");
+        member.setMembershipId("FAKE-0000");
+        member.setName("Priya Nair");
+        member.setPremiumMember(true);
+        member.setSecurityAnswer("BlueMountain");
+        System.out.println(member.getMembershipId());
+        System.out.println(member.isPremiumMember());
     }
 }
