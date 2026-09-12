@@ -1,12 +1,12 @@
 # Step_semester_3
 
-## Date: 22-08-2026
+## Date: 11-09-2026
 
 **Today's Work:**
-- Converted five C class-practice programs to Java.
-- Added `PlacementRecord`, `MessWallet`, `Course`, `IdCard`, and `Student` solutions.
-- Compiled and tested the programs with representative inputs.
-- Pushed the work to `feature/session_1`.
+- Added the session 3 class and assignment solutions on `feature/session_3`.
+- Added the session 4 class and assignment solutions on `feature/session_4`.
+- Added the session 5 class and assignment solutions on `feature/session_5`.
+- Compiled and tested each session before pushing its feature branch.
 
 **Next Session Plan:**
 - Continue coding in a new feature branch created from `develop`.
@@ -16,13 +16,12 @@
 
 ------
 
-## Date: 11-09-2026
+## Date: 29-08-2026
 
 **Today's Work:**
-- Added the session 3 class and assignment solutions on `feature/session_3`.
-- Added the session 4 class and assignment solutions on `feature/session_4`.
-- Added the session 5 class and assignment solutions on `feature/session_5`.
-- Compiled and tested each session before pushing its feature branch.
+- Added the session 2 Java class practice solutions for LibraryBook, Employee, Account, SrmStudent, and FeeAccount.
+- Corrected the branch structure so feature branches contain only code.
+- Kept the project overview and logs on the main branch.
 
 **Next Session Plan:**
 - Continue coding in a new feature branch created from `develop`.
@@ -48,12 +47,13 @@
 
 ------
 
-## Date: 29-08-2026
+## Date: 22-08-2026
 
 **Today's Work:**
-- Added the session 2 Java class practice solutions for LibraryBook, Employee, Account, SrmStudent, and FeeAccount.
-- Corrected the branch structure so feature branches contain only code.
-- Kept the project overview and logs on the main branch.
+- Converted five C class-practice programs to Java.
+- Added `PlacementRecord`, `MessWallet`, `Course`, `IdCard`, and `Student` solutions.
+- Compiled and tested the programs with representative inputs.
+- Pushed the work to `feature/session_1`.
 
 **Next Session Plan:**
 - Continue by reviewing and refining the session 2 work if needed.
