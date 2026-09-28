@@ -1,5 +1,22 @@
 # Step_semester_3
 
+## Date: 28-09-2026
+
+**Today's Work:**
+- Added the session 8 assignment solutions in `oop/assignment_problems/problem1` through `problem5`.
+- Implemented the Hotel Laundry Queue, Assignment Submission Portal, Campus Premiere Ticket Counter, FitzZone Membership Desk, and Campus Notice Broadcaster systems.
+- Used abstraction, interfaces, encapsulation, inheritance, polymorphism, and composition where appropriate.
+- Compiled and executed all session 8 assignment programs successfully.
+- Kept the session 8 assignment files separate from the existing `oop/class_problems` files.
+
+**Next Session Plan:**
+- Continue coding in a new feature branch created from `develop`.
+
+**Issues Faced:**
+- Corrected the session 8 repository structure before finalizing the assignment files.
+
+------
+
 ## Date: 25-09-2026
 
 **Today's Work:**
