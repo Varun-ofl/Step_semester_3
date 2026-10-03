@@ -1,0 +1,12 @@
+Session 9 Quiz Answers
+
+1. B - O(1)
+2. C - Insertion
+3. C - Matching the required operations and constraints to the strengths of different data structures
+4. C - Time vs space trade-offs
+5. B - O(m + n)
+6. C - Linear data structure
+7. C - O(n)
+8. D - Linked list
+9. B - O(m x n)
+10. C - To organize, store, and access data efficiently for specific operations

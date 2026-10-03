@@ -1,0 +1,10 @@
+Session 9 Concept Answers
+
+Question 1
+Searching an unsorted 1D array requires a linear search in the worst case, so its time complexity is O(n). A sorted array can use binary search, which repeatedly discards half of the remaining elements and has O(log n) time complexity. The difference comes from the ordering information: sorting makes it possible to decide which half cannot contain the target.
+
+Question 2
+Big-O notation describes the rate at which work grows as the input size increases and ignores constant factors. The expression 2n grows at the same linear rate as n; the factor 2 only means that each input requires twice as many operations. Therefore, 2n is classified as O(n).
+
+Question 3
+Linear structures such as arrays are traversed along one sequential path, usually from the first element to the last. In a non-linear structure such as a tree, elements have parent-child relationships and traversal must choose a strategy such as preorder, inorder, postorder, or level order. A tree traversal explores branches rather than following one continuous sequence.
