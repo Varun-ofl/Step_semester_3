@@ -1,0 +1,31 @@
+Session 10 Concept Answers
+
+Question 1
+Method overloading occurs when a class has methods with the same name but different parameter lists. The compiler chooses the matching overload at compile time using the declared argument types, so it is also called static or compile-time polymorphism. Method overriding occurs when a derived class supplies a new implementation with the same signature as an inherited method. The implementation for an overridden instance method is selected at run time from the actual object, even when the object is referenced through a base-type variable.
+
+Question 2
+When an object of a derived class is created, the base-class constructor runs before the derived-class constructor. This allows the inherited part of the object to be initialized before the derived class initializes its own fields. A derived constructor passes values to a base constructor with a constructor-invocation mechanism such as super(arguments) in Java; that call must appear as the first statement of the derived constructor. If no explicit call is written, the language may insert a call to the base class's no-argument constructor when one is available.
+
+Question 3
+A concrete class can be instantiated directly and can contain fields, constructors, and fully implemented methods. An abstract class cannot be instantiated on its own; it can hold instance state, provide implemented methods, and also leave some operations abstract for subclasses. An interface primarily defines a contract that unrelated classes can implement, and it normally does not represent per-object state, although modern languages may allow constants, static members, and default methods. I would choose a concrete class for a complete usable type, an abstract class when related types share state or partial implementation, and an interface when different types need to promise the same capability without sharing a class hierarchy.
+
+Question 4
+The implementing class provides one public method whose signature matches the common abstract method. That single implementation satisfies both interfaces because the method contract is identical; the class does not need to write two separate methods. If the interfaces declare incompatible default implementations, the class must explicitly override the method to resolve the conflict. This demonstrates that interfaces describe contracts and that one compatible implementation can fulfill multiple contracts.
+
+Question 5
+Content equality means that two separate object instances should compare equal when their relevant fields contain the same values. equals() defines that comparison, while hashCode() must produce the same hash for every pair of objects that equals() considers equal. Hash-based collections such as HashSet and HashMap use the hash code to locate a bucket before using equals() to confirm a match. If equals() is overridden without hashCode(), equal objects can be placed in different buckets, causing duplicate set entries or failed map lookups even though equals() says the keys are equal.
+
+Question 6
+A shallow copy creates a new outer object but copies references to the same nested objects. For example, copying a Student whose address contains a mutable list of phone numbers gives both Student objects a reference to the same list; adding a phone number through one student unexpectedly changes the other. A deep copy creates independent copies of the nested mutable objects as well as the outer object. It is necessary when the copied object must be modified independently without sharing changes through mutable state.
+
+Question 7
+An inner type is a non-static nested class tied to an instance of its enclosing class. It must usually be created through an enclosing object and can access the enclosing instance's private fields and methods, including instance state. A static nested type belongs to the enclosing type rather than to one enclosing object, so it can be created without an enclosing instance and can directly access only static enclosing members. An inner type is useful for an iterator or helper that needs the state of one outer object, while a static nested type is useful for a builder, result type, or utility that is logically grouped with the outer class but does not need an outer instance.
+
+Question 8
+Accessing an array element by index is O(1) because the address can be calculated directly from the array's base address, element size, and index. Inserting or deleting in the middle of a fixed-size array is O(n) in the worst case because the elements after the affected position must be shifted to preserve order. A fixed-size array also cannot grow automatically, so an insertion may require a new larger array and copying additional elements. The constant-time access and linear-time shifting result from the contiguous layout of array elements.
+
+Question 9
+A base-type reference can refer to objects of any class derived from that base type, so an array such as Shape[] can hold Circle, Square, and other Shape objects. A loop can call the common area() method through each Shape reference without knowing the concrete type. Dynamic method dispatch examines the actual object at run time and selects the overriding implementation belonging to that object. Consequently, a Circle uses Circle.area() and a Square uses Square.area() without explicit type checks or conditional casts.
+
+Question 10
+Use an IS-A relationship when the new type is genuinely a specialized form of the base type and should inherit its common state or behavior. Use a CAN-DO relationship through an interface when a capability may be shared by otherwise unrelated classes and inheritance would create an artificial hierarchy. For example, a Bird and a Drone may both implement a Flyable interface even though a Drone is not an Animal and should not inherit from Bird. The interface expresses the shared operation, while each type remains free to use its own class hierarchy and implementation.

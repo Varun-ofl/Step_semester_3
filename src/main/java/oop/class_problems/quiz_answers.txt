@@ -1,0 +1,22 @@
+Session 10 Quiz Answers
+
+1. B - protected age and public getName() are directly accessible in Student; private name is accessible only inside Person.
+2. C - Diagram 3 is invalid for a language with single class inheritance because S attempts to extend both Q and R.
+3. B - Person is constructed first, followed by Employee, and then Manager, so each derived constructor builds on an initialized base portion.
+4. C - Derived can directly access the protected field. It cannot access the private field, override a final method, or reduce public visibility.
+5. B - Dynamic dispatch selects Bus.fare() because the actual object is a Bus, even though the reference type is Vehicle.
+6. B - The two Printer methods overload one another, while SpecialPrinter's matching print(String) method overrides the inherited method.
+7. A - A Shape reference can directly access members declared by Shape. Circle-specific radius and calculateArea() require a Circle reference or a safe cast.
+8. C - Dynamic dispatch calls Circle.area() for the Circle element and Square.area() for the Square element.
+9. B - The object is a Current, so the cast to Current succeeds and the cast to unrelated sibling type Savings fails at runtime.
+10. B - A Plan reference allows all subtypes to be processed uniformly while dynamic dispatch selects each subtype's bill() implementation.
+11. A - printDocument() is the public essential operation; the private buffer and helper methods hide the printer's internal process.
+12. B - An abstract Vehicle cannot be instantiated directly, but a Vehicle reference can refer to a concrete Car object.
+13. B - A subclass that does not implement an inherited abstract method must itself remain abstract and cannot be instantiated as a concrete class.
+14. B - MonthlyReport cannot be concrete while generateBody() remains unimplemented; it must implement the method or be declared abstract.
+15. A - An interface specifies operations and contracts that a type promises to provide, rather than defining ordinary per-object state or one required implementation.
+16. B - Interface methods are implicitly public and abstract unless they are declared as default, static, or private methods. The constant is public, static, and final.
+17. C - DataProcessor must implement both serialize() and reset() to satisfy the contracts of both interfaces.
+18. C - An interface is the appropriate construct for a common protocol shared by unrelated classes without requiring shared state or a class implementation.
+19. B - Dog IS-A Animal through generalization, while Eagle CAN-DO Flyable through interface realization.
+20. A - equals(), hashCode(), and toString() are commonly inherited from the root Object type and are frequently overridden for class-specific behavior.
