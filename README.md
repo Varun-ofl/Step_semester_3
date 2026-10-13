@@ -1,5 +1,23 @@
 # Step_semester_3
 
+## Date: 13-10-2026
+
+**Today's Work:**
+- Added the session 10 class problem solutions in `oop/class_problems/problem1` through `problem5`.
+- Added the session 10 assignment solutions in `oop/assignment_problems/problem1` through `problem5`.
+- Implemented bank withdrawal rules, campus vehicle passes, student club registration, marks-grid analysis, and payroll processing.
+- Implemented priority token insertion, cancelled-order cleanup, queue reversal, bidirectional train coaches, and round-robin game turns using linked-list structures.
+- Added the session 10 concept answers and quiz answers under `oop/class_problems`.
+- Compiled and independently executed all session 10 Java programs successfully.
+
+**Next Session Plan:**
+- Continue coding in a new feature branch created from `develop`.
+
+**Issues Faced:**
+- None.
+
+------
+
 ## Date: 03-10-2026
 
 **Today's Work:**
